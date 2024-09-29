@@ -1,0 +1,18 @@
+{
+    "properties": {
+        "first_name": {
+            "type": "text"
+        },
+        "last_name": {
+            "type": "text"
+        },
+        "email": {
+            "type": "text",
+            "fields": {
+                "keyword": {
+                    "type": "keyword"
+                }
+            }
+        }
+    }
+}
