@@ -24,7 +24,7 @@ def create_index():
     es_client.indices.create(index=index_name, settings=settings, mappings=mappings)
 
 
-def _delete_index():
+def delete_index():
     """
     Delete the 'account' index.
     """
