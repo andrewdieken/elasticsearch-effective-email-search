@@ -1,5 +1,31 @@
 {
     "index": {
         "max_ngram_diff": 20
-    }
+    },
+    "analysis": {
+        "filter": {
+          "email_token_filter": {
+            "type": "pattern_capture",
+            "preserve_original": "true",
+            "patterns": ["([^@]+)"]
+          },
+          "edge_ngram_token_filter": {
+            "type": "edge_ngram",
+            "min_gram": "2",
+            "max_gram": "20"
+          }
+        },
+        "analyzer": {
+          "email_analyzer": {
+            "filter": [
+              "email_token_filter",
+              "lowercase",
+              "unique",
+              "edge_ngram_token_filter"
+            ],
+            "type": "custom",
+            "tokenizer": "uax_url_email"
+          }
+        }
+      }
 }

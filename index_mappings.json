@@ -6,8 +6,25 @@
         "last_name": {
             "type": "text"
         },
-        "email": {
+        "plain_text_email": {
             "type": "text",
+            "fields": {
+                "keyword": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "search_as_you_type_email": {
+            "type": "search_as_you_type",
+            "fields": {
+                "keyword": {
+                    "type": "keyword"
+                }
+            }
+        },
+        "email_analyzer_email": {
+            "type": "text",
+            "analyzer": "email_analyzer",
             "fields": {
                 "keyword": {
                     "type": "keyword"
