@@ -11,7 +11,7 @@
           },
           "edge_ngram_token_filter": {
             "type": "edge_ngram",
-            "min_gram": "2",
+            "min_gram": "1",
             "max_gram": "20"
           }
         },
@@ -20,8 +20,8 @@
             "filter": [
               "email_token_filter",
               "lowercase",
-              "unique",
-              "edge_ngram_token_filter"
+              "edge_ngram_token_filter",
+              "unique"
             ],
             "type": "custom",
             "tokenizer": "uax_url_email"

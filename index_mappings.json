@@ -15,12 +15,7 @@
             }
         },
         "search_as_you_type_email": {
-            "type": "search_as_you_type",
-            "fields": {
-                "keyword": {
-                    "type": "keyword"
-                }
-            }
+            "type": "search_as_you_type"
         },
         "email_analyzer_email": {
             "type": "text",
