@@ -19,6 +19,10 @@ def create_index():
     """
     Create the 'account' index.
     """
+    if es_client.indices.exists(index=index_name):
+        print(f"Index '{index_name}' already exists. If you'd like to recreate the index, delete the existing index first with the 'delete_index' flag.")
+        return
+
     settings = json.load(open('index_settings.json'))
     mappings = json.load(open('index_mappings.json'))
     es_client.indices.create(index=index_name, settings=settings, mappings=mappings)
@@ -43,8 +47,12 @@ def populate_index():
 if __name__ == 'main':
     parser = argparse.ArgumentParser(description='Manage Elasticsearch index.')
     parser.add_argument('--create', action='store_true', help='Create the index')
+    parser.add_argument('--delete', action='store_true', help='Delete the index')
     parser.add_argument('--populate', action='store_true', help='Populate the index with data')
     args = parser.parse_args()
+
+    if args.delete:
+        delete_index()
 
     if args.create:
         create_index()
