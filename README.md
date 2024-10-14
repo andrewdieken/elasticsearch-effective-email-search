@@ -71,7 +71,7 @@ python main.py --delete --create --populate
 
 ### Queries
 
-Below you'll find example queries you can run to experiment and see first hand how the different configurations affect search functionality.
+Below you'll find example queries you can run to experiment and see first hand how different configurations affect search functionality.
 
 #### Elasticsearch [Text Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html) with default analysis
 
@@ -108,7 +108,7 @@ resp = es_client.search(
 print(resp)
 ```
 
-#### Elasticsearch [Search as you type Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-as-you-type.html)
+#### Elasticsearch [search-as-you-type Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-as-you-type.html)
 
 See how the Elasticsearch search-as-you-type field analyzes different emails by running:
 
@@ -156,7 +156,7 @@ from main import *
 
 resp = es_client.indices.analyze(
     index="account",
-    field="custom_analyzer_field_email",
+    field="built_in_text_field_with_custom_analyzer_email",
     text="Mic.Johnson-42@live.com"
 )
 print(resp)
@@ -172,7 +172,7 @@ resp = es_client.search(
     query={
         "multi_match": {
             "query": "Mic.Johnson-42@live.com",
-            "fields": ["custom_analyzer_field_email"]
+            "fields": ["built_in_text_field_with_custom_analyzer_email"]
         }
     }
 )
