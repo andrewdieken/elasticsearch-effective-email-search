@@ -2,365 +2,372 @@
     {
         "first_name": "John",
         "last_name": "Doe",
-        "plain_text_email": "john.doe123@gmail.com",
-        "email_analyzer_email": "john.doe123@gmail.com",
-        "search_as_you_type_email": "john.doe123@gmail.com"
+        "built_in_text_field_email": "john.doe123@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "john.doe123@gmail.com",
+        "search_as_you_type_field_email": "john.doe123@gmail.com"
     },
     {
         "first_name": "John",
         "last_name": "Smith",
-        "plain_text_email": "john.smith@gmail.com",
-        "email_analyzer_email": "john.smith@gmail.com",
-        "search_as_you_type_email": "john.smith@gmail.com"
+        "built_in_text_field_email": "john.smith@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "john.smith@gmail.com",
+        "search_as_you_type_field_email": "john.smith@gmail.com"
     },
     {
         "first_name": "Jane",
         "last_name": "Smith",
-        "plain_text_email": "jane_smith@outlook.com",
-        "email_analyzer_email": "jane_smith@outlook.com",
-        "search_as_you_type_email": "jane_smith@outlook.com"
+        "built_in_text_field_email": "jane_smith@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "jane_smith@outlook.com",
+        "search_as_you_type_field_email": "jane_smith@outlook.com"
     },
     {
         "first_name": "Michael",
         "last_name": "Johnson",
-        "plain_text_email": "mic.johnson-42@live.com",
-        "email_analyzer_email": "mic.johnson-42@live.com",
-        "search_as_you_type_email": "mic.johnson-42@live.com"
+        "built_in_text_field_email": "mic.johnson-42@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "mic.johnson-42@live.com",
+        "search_as_you_type_field_email": "mic.johnson-42@live.com"
     },
     {
         "first_name": "Michael",
         "last_name": "Johnson",
-        "plain_text_email": "mic-johnson-42@live.com",
-        "email_analyzer_email": "mic-johnson-42@live.com",
-        "search_as_you_type_email": "mic-johnson-42@live.com"
+        "built_in_text_field_email": "mic-johnson-42@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "mic-johnson-42@live.com",
+        "search_as_you_type_field_email": "mic-johnson-42@live.com"
+    },
+    {
+        "first_name": "Michael",
+        "last_name": "Johnson",
+        "built_in_text_field_email": "mic.lynn.johnson@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "mic.lynn.johnson@live.com",
+        "search_as_you_type_field_email": "mic.lynn.johnson@live.com"
     },
     {
         "first_name": "Emily",
         "last_name": "Davis",
-        "plain_text_email": "emily-davis@yahoo.com",
-        "email_analyzer_email": "emily-davis@yahoo.com",
-        "search_as_you_type_email": "emily-davis@yahoo.com"
+        "built_in_text_field_email": "emily-davis@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "emily-davis@yahoo.com",
+        "search_as_you_type_field_email": "emily-davis@yahoo.com"
     },
     {
         "first_name": "Chris",
         "last_name": "Brown",
-        "plain_text_email": "chris.brown94@gmail.com",
-        "email_analyzer_email": "chris.brown94@gmail.com",
-        "search_as_you_type_email": "chris.brown94@gmail.com"
+        "built_in_text_field_email": "chris.brown94@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "chris.brown94@gmail.com",
+        "search_as_you_type_field_email": "chris.brown94@gmail.com"
     },
     {
         "first_name": "Chris",
         "last_name": "Gregory",
-        "plain_text_email": "chrisgreg@gmail.com",
-        "email_analyzer_email": "chrisgreg@gmail.com",
-        "search_as_you_type_email": "chrisgreg@gmail.com"
+        "built_in_text_field_email": "chrisgreg@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "chrisgreg@gmail.com",
+        "search_as_you_type_field_email": "chrisgreg@gmail.com"
     },
     {
         "first_name": "Sarah",
         "last_name": "Wilson",
-        "plain_text_email": "sarah_wilson_567@outlook.com",
-        "email_analyzer_email": "sarah_wilson_567@outlook.com",
-        "search_as_you_type_email": "sarah_wilson_567@outlook.com"
+        "built_in_text_field_email": "sarah_wilson_567@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "sarah_wilson_567@outlook.com",
+        "search_as_you_type_field_email": "sarah_wilson_567@outlook.com"
     },
     {
         "first_name": "Sarah",
         "last_name": "Casey",
-        "plain_text_email": "sarah52casey@outlook.com",
-        "email_analyzer_email": "sarah52casey@outlook.com",
-        "search_as_you_type_email": "sarah52casey@outlook.com"
+        "built_in_text_field_email": "sarah52casey@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "sarah52casey@outlook.com",
+        "search_as_you_type_field_email": "sarah52casey@outlook.com"
     },
     {
         "first_name": "David",
         "last_name": "Martinez",
-        "plain_text_email": "d.martinez@live.com",
-        "email_analyzer_email": "d.martinez@live.com",
-        "search_as_you_type_email": "d.martinez@live.com"
+        "built_in_text_field_email": "d.martinez@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "d.martinez@live.com",
+        "search_as_you_type_field_email": "d.martinez@live.com"
     },
     {
         "first_name": "Laura",
         "last_name": "Garcia",
-        "plain_text_email": "laura-g123@yahoo.com",
-        "email_analyzer_email": "laura-g123@yahoo.com",
-        "search_as_you_type_email": "laura-g123@yahoo.com"
+        "built_in_text_field_email": "laura-g123@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "laura-g123@yahoo.com",
+        "search_as_you_type_field_email": "laura-g123@yahoo.com"
     },
     {
         "first_name": "Robert",
         "last_name": "Clark",
-        "plain_text_email": "robert.clark@outlook.com",
-        "email_analyzer_email": "robert.clark@outlook.com",
-        "search_as_you_type_email": "robert.clark@outlook.com"
+        "built_in_text_field_email": "robert.clark@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "robert.clark@outlook.com",
+        "search_as_you_type_field_email": "robert.clark@outlook.com"
     },
     {
         "first_name": "Sophia",
         "last_name": "Lopez",
-        "plain_text_email": "sophia.lopez54@gmail.com",
-        "email_analyzer_email": "sophia.lopez54@gmail.com",
-        "search_as_you_type_email": "sophia.lopez54@gmail.com"
+        "built_in_text_field_email": "sophia.lopez54@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "sophia.lopez54@gmail.com",
+        "search_as_you_type_field_email": "sophia.lopez54@gmail.com"
     },
     {
         "first_name": "Daniel",
         "last_name": "Miller",
-        "plain_text_email": "daniel.miller22@yahoo.com",
-        "email_analyzer_email": "daniel.miller22@yahoo.com",
-        "search_as_you_type_email": "daniel.miller22@yahoo.com"
+        "built_in_text_field_email": "daniel.miller22@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "daniel.miller22@yahoo.com",
+        "search_as_you_type_field_email": "daniel.miller22@yahoo.com"
     },
     {
         "first_name": "Olivia",
         "last_name": "Martinez",
-        "plain_text_email": "olivia.martinez@live.com",
-        "email_analyzer_email": "olivia.martinez@live.com",
-        "search_as_you_type_email": "olivia.martinez@live.com"
+        "built_in_text_field_email": "olivia.martinez@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "olivia.martinez@live.com",
+        "search_as_you_type_field_email": "olivia.martinez@live.com"
     },
     {
         "first_name": "Matthew",
         "last_name": "Walker",
-        "plain_text_email": "matthew.walker88@gmail.com",
-        "email_analyzer_email": "matthew.walker88@gmail.com",
-        "search_as_you_type_email": "matthew.walker88@gmail.com"
+        "built_in_text_field_email": "matthew.walker88@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "matthew.walker88@gmail.com",
+        "search_as_you_type_field_email": "matthew.walker88@gmail.com"
     },
     {
         "first_name": "Chloe",
         "last_name": "Taylor",
-        "plain_text_email": "chloe_taylor-12@outlook.com",
-        "email_analyzer_email": "chloe_taylor-12@outlook.com",
-        "search_as_you_type_email": "chloe_taylor-12@outlook.com"
+        "built_in_text_field_email": "chloe_taylor-12@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "chloe_taylor-12@outlook.com",
+        "search_as_you_type_field_email": "chloe_taylor-12@outlook.com"
     },
     {
         "first_name": "James",
         "last_name": "Harris",
-        "plain_text_email": "james.harris@live.com",
-        "email_analyzer_email": "james.harris@live.com",
-        "search_as_you_type_email": "james.harris@live.com"
+        "built_in_text_field_email": "james.harris@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "james.harris@live.com",
+        "search_as_you_type_field_email": "james.harris@live.com"
     },
     {
         "first_name": "Lily",
         "last_name": "White",
-        "plain_text_email": "lily_white123@yahoo.com",
-        "email_analyzer_email": "lily_white123@yahoo.com",
-        "search_as_you_type_email": "lily_white123@yahoo.com"
+        "built_in_text_field_email": "lily_white123@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "lily_white123@yahoo.com",
+        "search_as_you_type_field_email": "lily_white123@yahoo.com"
     },
     {
         "first_name": "Ethan",
         "last_name": "King",
-        "plain_text_email": "ethan.king94@gmail.com",
-        "email_analyzer_email": "ethan.king94@gmail.com",
-        "search_as_you_type_email": "ethan.king94@gmail.com"
+        "built_in_text_field_email": "ethan.king94@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "ethan.king94@gmail.com",
+        "search_as_you_type_field_email": "ethan.king94@gmail.com"
     },
     {
         "first_name": "Ava",
         "last_name": "Scott",
-        "plain_text_email": "ava_scott567@outlook.com",
-        "email_analyzer_email": "ava_scott567@outlook.com",
-        "search_as_you_type_email": "ava_scott567@outlook.com"
+        "built_in_text_field_email": "ava_scott567@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "ava_scott567@outlook.com",
+        "search_as_you_type_field_email": "ava_scott567@outlook.com"
     },
     {
         "first_name": "Joshua",
         "last_name": "Green",
-        "plain_text_email": "joshua-green@live.com",
-        "email_analyzer_email": "joshua-green@live.com",
-        "search_as_you_type_email": "joshua-green@live.com"
+        "built_in_text_field_email": "joshua-green@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "joshua-green@live.com",
+        "search_as_you_type_field_email": "joshua-green@live.com"
     },
     {
         "first_name": "Mia",
         "last_name": "Baker",
-        "plain_text_email": "mia_baker@yahoo.com",
-        "email_analyzer_email": "mia_baker@yahoo.com",
-        "search_as_you_type_email": "mia_baker@yahoo.com"
+        "built_in_text_field_email": "mia_baker@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "mia_baker@yahoo.com",
+        "search_as_you_type_field_email": "mia_baker@yahoo.com"
     },
     {
         "first_name": "Alexander",
         "last_name": "Adams",
-        "plain_text_email": "alex.adams@outlook.com",
-        "email_analyzer_email": "alex.adams@outlook.com",
-        "search_as_you_type_email": "alex.adams@outlook.com"
+        "built_in_text_field_email": "alex.adams@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "alex.adams@outlook.com",
+        "search_as_you_type_field_email": "alex.adams@outlook.com"
     },
     {
         "first_name": "Ella",
         "last_name": "Nelson",
-        "plain_text_email": "ella.nelson54@gmail.com",
-        "email_analyzer_email": "ella.nelson54@gmail.com",
-        "search_as_you_type_email": "ella.nelson54@gmail.com"
+        "built_in_text_field_email": "ella.nelson54@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "ella.nelson54@gmail.com",
+        "search_as_you_type_field_email": "ella.nelson54@gmail.com"
     },
     {
         "first_name": "William",
         "last_name": "Hill",
-        "plain_text_email": "william.hill-42@yahoo.com",
-        "email_analyzer_email": "william.hill-42@yahoo.com",
-        "search_as_you_type_email": "william.hill-42@yahoo.com"
+        "built_in_text_field_email": "william.hill-42@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "william.hill-42@yahoo.com",
+        "search_as_you_type_field_email": "william.hill-42@yahoo.com"
     },
     {
         "first_name": "Grace",
         "last_name": "Carter",
-        "plain_text_email": "grace_carter@live.com",
-        "email_analyzer_email": "grace_carter@live.com",
-        "search_as_you_type_email": "grace_carter@live.com"
+        "built_in_text_field_email": "grace_carter@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "grace_carter@live.com",
+        "search_as_you_type_field_email": "grace_carter@live.com"
     },
     {
         "first_name": "Liam",
         "last_name": "Mitchell",
-        "plain_text_email": "liam.mitchell@gmail.com",
-        "email_analyzer_email": "liam.mitchell@gmail.com",
-        "search_as_you_type_email": "liam.mitchell@gmail.com"
+        "built_in_text_field_email": "liam.mitchell@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "liam.mitchell@gmail.com",
+        "search_as_you_type_field_email": "liam.mitchell@gmail.com"
     },
     {
         "first_name": "Charlotte",
         "last_name": "Perez",
-        "plain_text_email": "charlotte.perez123@yahoo.com",
-        "email_analyzer_email": "charlotte.perez123@yahoo.com",
-        "search_as_you_type_email": "charlotte.perez123@yahoo.com"
+        "built_in_text_field_email": "charlotte.perez123@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "charlotte.perez123@yahoo.com",
+        "search_as_you_type_field_email": "charlotte.perez123@yahoo.com"
     },
     {
         "first_name": "Benjamin",
         "last_name": "Roberts",
-        "plain_text_email": "ben.roberts_56@outlook.com",
-        "email_analyzer_email": "ben.roberts_56@outlook.com",
-        "search_as_you_type_email": "ben.roberts_56@outlook.com"
+        "built_in_text_field_email": "ben.roberts_56@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "ben.roberts_56@outlook.com",
+        "search_as_you_type_field_email": "ben.roberts_56@outlook.com"
     },
     {
         "first_name": "Amelia",
         "last_name": "Turner",
-        "plain_text_email": "amelia.turner@live.com",
-        "email_analyzer_email": "amelia.turner@live.com",
-        "search_as_you_type_email": "amelia.turner@live.com"
+        "built_in_text_field_email": "amelia.turner@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "amelia.turner@live.com",
+        "search_as_you_type_field_email": "amelia.turner@live.com"
     },
     {
         "first_name": "Lucas",
         "last_name": "Phillips",
-        "plain_text_email": "lucas.phillips98@gmail.com",
-        "email_analyzer_email": "lucas.phillips98@gmail.com",
-        "search_as_you_type_email": "lucas.phillips98@gmail.com"
+        "built_in_text_field_email": "lucas.phillips98@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "lucas.phillips98@gmail.com",
+        "search_as_you_type_field_email": "lucas.phillips98@gmail.com"
     },
     {
         "first_name": "Isabella",
         "last_name": "Campbell",
-        "plain_text_email": "isabella_campbell567@yahoo.com",
-        "email_analyzer_email": "isabella_campbell567@yahoo.com",
-        "search_as_you_type_email": "isabella_campbell567@yahoo.com"
+        "built_in_text_field_email": "isabella_campbell567@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "isabella_campbell567@yahoo.com",
+        "search_as_you_type_field_email": "isabella_campbell567@yahoo.com"
     },
     {
         "first_name": "Mason",
         "last_name": "Parker",
-        "plain_text_email": "mason.parker@outlook.com",
-        "email_analyzer_email": "mason.parker@outlook.com",
-        "search_as_you_type_email": "mason.parker@outlook.com"
+        "built_in_text_field_email": "mason.parker@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "mason.parker@outlook.com",
+        "search_as_you_type_field_email": "mason.parker@outlook.com"
     },
     {
         "first_name": "Harper",
         "last_name": "Evans",
-        "plain_text_email": "harper.evans_42@gmail.com",
-        "email_analyzer_email": "harper.evans_42@gmail.com",
-        "search_as_you_type_email": "harper.evans_42@gmail.com"
+        "built_in_text_field_email": "harper.evans_42@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "harper.evans_42@gmail.com",
+        "search_as_you_type_field_email": "harper.evans_42@gmail.com"
     },
     {
         "first_name": "Henry",
         "last_name": "Edwards",
-        "plain_text_email": "henry.edwards@live.com",
-        "email_analyzer_email": "henry.edwards@live.com",
-        "search_as_you_type_email": "henry.edwards@live.com"
+        "built_in_text_field_email": "henry.edwards@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "henry.edwards@live.com",
+        "search_as_you_type_field_email": "henry.edwards@live.com"
     },
     {
         "first_name": "Ella",
         "last_name": "Collins",
-        "plain_text_email": "ella.collins@yahoo.com",
-        "email_analyzer_email": "ella.collins@yahoo.com",
-        "search_as_you_type_email": "ella.collins@yahoo.com"
+        "built_in_text_field_email": "ella.collins@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "ella.collins@yahoo.com",
+        "search_as_you_type_field_email": "ella.collins@yahoo.com"
     },
     {
         "first_name": "Oliver",
         "last_name": "Stewart",
-        "plain_text_email": "oliver.stewart88@gmail.com",
-        "email_analyzer_email": "oliver.stewart88@gmail.com",
-        "search_as_you_type_email": "oliver.stewart88@gmail.com"
+        "built_in_text_field_email": "oliver.stewart88@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "oliver.stewart88@gmail.com",
+        "search_as_you_type_field_email": "oliver.stewart88@gmail.com"
     },
     {
         "first_name": "Sophie",
         "last_name": "Morris",
-        "plain_text_email": "sophie.morris@outlook.com",
-        "email_analyzer_email": "sophie.morris@outlook.com",
-        "search_as_you_type_email": "sophie.morris@outlook.com"
+        "built_in_text_field_email": "sophie.morris@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "sophie.morris@outlook.com",
+        "search_as_you_type_field_email": "sophie.morris@outlook.com"
     },
     {
         "first_name": "Jacob",
         "last_name": "Rogers",
-        "plain_text_email": "jacob_rogers56@live.com",
-        "email_analyzer_email": "jacob_rogers56@live.com",
-        "search_as_you_type_email": "jacob_rogers56@live.com"
+        "built_in_text_field_email": "jacob_rogers56@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "jacob_rogers56@live.com",
+        "search_as_you_type_field_email": "jacob_rogers56@live.com"
     },
     {
         "first_name": "Scarlett",
         "last_name": "Reed",
-        "plain_text_email": "scarlett.reed123@yahoo.com",
-        "email_analyzer_email": "scarlett.reed123@yahoo.com",
-        "search_as_you_type_email": "scarlett.reed123@yahoo.com"
+        "built_in_text_field_email": "scarlett.reed123@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "scarlett.reed123@yahoo.com",
+        "search_as_you_type_field_email": "scarlett.reed123@yahoo.com"
     },
     {
         "first_name": "Samuel",
         "last_name": "Cook",
-        "plain_text_email": "samuel.cook@gmail.com",
-        "email_analyzer_email": "samuel.cook@gmail.com",
-        "search_as_you_type_email": "samuel.cook@gmail.com"
+        "built_in_text_field_email": "samuel.cook@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "samuel.cook@gmail.com",
+        "search_as_you_type_field_email": "samuel.cook@gmail.com"
     },
     {
         "first_name": "Hannah",
         "last_name": "Morgan",
-        "plain_text_email": "hannah.morgan567@outlook.com",
-        "email_analyzer_email": "hannah.morgan567@outlook.com",
-        "search_as_you_type_email": "hannah.morgan567@outlook.com"
+        "built_in_text_field_email": "hannah.morgan567@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "hannah.morgan567@outlook.com",
+        "search_as_you_type_field_email": "hannah.morgan567@outlook.com"
     },
     {
         "first_name": "Jack",
         "last_name": "Bell",
-        "plain_text_email": "jack_bell_42@live.com",
-        "email_analyzer_email": "jack_bell_42@live.com",
-        "search_as_you_type_email": "jack_bell_42@live.com"
+        "built_in_text_field_email": "jack_bell_42@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "jack_bell_42@live.com",
+        "search_as_you_type_field_email": "jack_bell_42@live.com"
     },
     {
         "first_name": "Luna",
         "last_name": "Murphy",
-        "plain_text_email": "luna.murphy@gmail.com",
-        "email_analyzer_email": "luna.murphy@gmail.com",
-        "search_as_you_type_email": "luna.murphy@gmail.com"
+        "built_in_text_field_email": "luna.murphy@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "luna.murphy@gmail.com",
+        "search_as_you_type_field_email": "luna.murphy@gmail.com"
     },
     {
         "first_name": "Logan",
         "last_name": "Rivera",
-        "plain_text_email": "logan.rivera@outlook.com",
-        "email_analyzer_email": "logan.rivera@outlook.com",
-        "search_as_you_type_email": "logan.rivera@outlook.com"
+        "built_in_text_field_email": "logan.rivera@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "logan.rivera@outlook.com",
+        "search_as_you_type_field_email": "logan.rivera@outlook.com"
     },
     {
         "first_name": "Evelyn",
         "last_name": "Cooper",
-        "plain_text_email": "evelyn.cooper@yahoo.com",
-        "email_analyzer_email": "evelyn.cooper@yahoo.com",
-        "search_as_you_type_email": "evelyn.cooper@yahoo.com"
+        "built_in_text_field_email": "evelyn.cooper@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "evelyn.cooper@yahoo.com",
+        "search_as_you_type_field_email": "evelyn.cooper@yahoo.com"
     },
     {
         "first_name": "Carter",
         "last_name": "Richardson",
-        "plain_text_email": "carter.richardson@gmail.com",
-        "email_analyzer_email": "carter.richardson@gmail.com",
-        "search_as_you_type_email": "carter.richardson@gmail.com"
+        "built_in_text_field_email": "carter.richardson@gmail.com",
+        "built_in_text_field_with_custom_analyzer_email": "carter.richardson@gmail.com",
+        "search_as_you_type_field_email": "carter.richardson@gmail.com"
     },
     {
         "first_name": "Madison",
         "last_name": "Bailey",
-        "plain_text_email": "madison.bailey_12@outlook.com",
-        "email_analyzer_email": "madison.bailey_12@outlook.com",
-        "search_as_you_type_email": "madison.bailey_12@outlook.com"
+        "built_in_text_field_email": "madison.bailey_12@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "madison.bailey_12@outlook.com",
+        "search_as_you_type_field_email": "madison.bailey_12@outlook.com"
     },
     {
         "first_name": "Owen",
         "last_name": "Howard",
-        "plain_text_email": "owen-howard@live.com",
-        "email_analyzer_email": "owen-howard@live.com",
-        "search_as_you_type_email": "owen-howard@live.com"
+        "built_in_text_field_email": "owen-howard@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "owen-howard@live.com",
+        "search_as_you_type_field_email": "owen-howard@live.com"
     },
     {
         "first_name": "Zoe",
         "last_name": "Ward",
-        "plain_text_email": "zoe.ward_94@yahoo.com",
-        "email_analyzer_email": "zoe.ward_94@yahoo.com",
-        "search_as_you_type_email": "zoe.ward_94@yahoo.com"
+        "built_in_text_field_email": "zoe.ward_94@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "zoe.ward_94@yahoo.com",
+        "search_as_you_type_field_email": "zoe.ward_94@yahoo.com"
     }
 ]
