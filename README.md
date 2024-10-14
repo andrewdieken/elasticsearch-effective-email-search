@@ -172,7 +172,10 @@ resp = es_client.search(
     query={
         "multi_match": {
             "query": "Mic.Johnson-42@live.com",
-            "fields": ["built_in_text_field_with_custom_analyzer_email"]
+            "fields": [
+                "built_in_text_field_with_custom_analyzer_email",
+                "built_in_text_field_with_custom_analyzer_email.keyword"
+            ]
         }
     }
 )
