@@ -68,3 +68,113 @@ If you need to recreate the `account` index (e.g. to update the index settings o
 ```bash
 python main.py --delete --create --populate
 ```
+
+### Queries
+
+Below you'll find example queries you can run to experiment and see first hand how the different configurations affect search functionality.
+
+#### Elasticsearch [Text Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html) with default analysis
+
+See how the Elasticsearch Text Field with default analysis analyzes different emails by running:
+
+```python
+from main import *
+
+resp = es_client.indices.analyze(
+    index="account",
+    field="built_in_text_field_email",
+    text="Mic.Johnson-42@live.com"
+)
+print(resp)
+```
+
+See how searching against the Elasticsearch Text Field with default analysis works by running:
+
+```python
+from main import *
+
+resp = es_client.search(
+    index="account",
+    query={
+        "multi_match": {
+            "query": "Mic.Johnson-42@live.com",
+            "fields": [
+                "built_in_text_field_email",
+                "built_in_text_field_email.keyword"
+            ]
+        }
+    }
+)
+print(resp)
+```
+
+#### Elasticsearch [Search as you type Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-as-you-type.html)
+
+See how the Elasticsearch search-as-you-type field analyzes different emails by running:
+
+```python
+from main import *
+
+resp = es_client.indices.analyze(
+    index="account",
+    field="search_as_you_type_field_email",
+    text="Mic.Johnson-42@live.com"
+)
+print(resp)
+```
+
+See how searching against the Elasticsearch search-as-you-type field works by running:
+
+```python
+from main import *
+
+resp = es_client.search(
+    index="account",
+    query={
+        "query": {
+            "multi_match": {
+            "query": "Mic.Johnson-42@live.com",
+            "type": "bool_prefix",
+            "fields": [
+                "search_as_you_type_field_email",
+                "search_as_you_type_field_email._2gram",
+                "search_as_you_type_field_email._3gram"
+            ]
+            }
+        }
+    }
+)
+print(resp)
+```
+
+#### Elasticsearch [Text Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html) with [Custom Analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-overview.html#analysis-customization)
+
+See how the Elasticsearch Text Field with a custom analyzer analyzes different emails by running:
+
+```python
+from main import *
+
+resp = es_client.indices.analyze(
+    index="account",
+    field="custom_analyzer_field_email",
+    text="Mic.Johnson-42@live.com"
+)
+print(resp)
+```
+
+See how searching against the Elasticsearch Text Field with a custom analyzer works by running:
+
+```python
+from main import *
+
+resp = es_client.search(
+    index="account",
+    query={
+        "multi_match": {
+            "query": "Mic.Johnson-42@live.com",
+            "fields": ["custom_analyzer_field_email"]
+        }
+    }
+)
+print(resp)
+```
