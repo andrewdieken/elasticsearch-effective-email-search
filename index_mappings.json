@@ -6,7 +6,7 @@
         "last_name": {
             "type": "text"
         },
-        "plain_text_email": {
+        "built_in_text_field_email": {
             "type": "text",
             "fields": {
                 "keyword": {
@@ -14,10 +14,10 @@
                 }
             }
         },
-        "search_as_you_type_email": {
+        "search_as_you_type_field_email": {
             "type": "search_as_you_type"
         },
-        "email_analyzer_email": {
+        "built_in_text_field_with_custom_analyzer_email": {
             "type": "text",
             "analyzer": "email_analyzer",
             "fields": {
