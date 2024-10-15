@@ -40,9 +40,9 @@ python main.py --delete --create --populate
 
 Below are Python code examples for analyzing and searching emails using three different field types:
 
-1. Elasticsearch Text Field (default analysis)
-2. Elasticsearch search-as-you-type Field
-3. Elasticsearch Text Field with Custom Analyzer
+1. [Elasticsearch Text Field (default analysis)](#elasticsearch-text-field-with-default-analysis)
+2. [Elasticsearch search-as-you-type Field](#elasticsearch-search-as-you-type-field)
+3. [Elasticsearch Text Field with Custom Analyzer](#elasticsearch-text-field-with-custom-analyzer)
 
 Each section includes:
 - An analysis example
