@@ -75,109 +75,352 @@ Below you'll find example queries you can run to experiment and see first hand h
 
 #### Elasticsearch [Text Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html) with default analysis
 
-See how the Elasticsearch Text Field with default analysis analyzes different emails by running:
+- __Analyze__ - see how the Elasticsearch Text Field with default analysis analyzes different emails by running:
 
-```python
-from main import *
+    ```python
+    from main import *
 
-resp = es_client.indices.analyze(
-    index="account",
-    field="built_in_text_field_email",
-    text="Mic.Johnson-42@live.com"
-)
-print(resp)
-```
+    resp = es_client.indices.analyze(
+        index="account",
+        field="built_in_text_field_email",
+        text="Mic.Josnson_42@live.com"
+    )
+    print(resp)
+    ```
 
-See how searching against the Elasticsearch Text Field with default analysis works by running:
+- __Search__ - see how searching against the Elasticsearch Text Field with default analysis works by running the following queries.
 
-```python
-from main import *
+    1. Full email address ✅ works as expected
 
-resp = es_client.search(
-    index="account",
-    query={
-        "multi_match": {
-            "query": "Mic.Johnson-42@live.com",
-            "fields": [
-                "built_in_text_field_email",
-                "built_in_text_field_email.keyword"
-            ]
-        }
-    }
-)
-print(resp)
-```
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.Josnson_42@live.com",
+                    "fields": [
+                        "built_in_text_field_email",
+                        "built_in_text_field_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    2.  Partial email address ❌ does __not__ work as expected due to analyzer producing no matching tokens
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.John",
+                    "fields": [
+                        "built_in_text_field_email",
+                        "built_in_text_field_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    3. Full email address with misspelling ✅ works as expected
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.Josnson_42@live.com",
+                    "fields": [
+                        "built_in_text_field_email",
+                        "built_in_text_field_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    4. Partial email address with misspelling ❌ does __not__ work as expected due to analyzer producing no matching tokens
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.Josnson_42",
+                    "fields": [
+                        "built_in_text_field_email",
+                        "built_in_text_field_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
 
 #### Elasticsearch [search-as-you-type Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/search-as-you-type.html)
 
-See how the Elasticsearch search-as-you-type field analyzes different emails by running:
+- __Analyze__ - see how the Elasticsearch search-as-you-type field analyzes different emails by running:
 
-```python
-from main import *
+    ```python
+    from main import *
 
-resp = es_client.indices.analyze(
-    index="account",
-    field="search_as_you_type_field_email",
-    text="Mic.Johnson-42@live.com"
-)
-print(resp)
-```
+    resp = es_client.indices.analyze(
+        index="account",
+        field="search_as_you_type_field_email",
+        text="Mic.Johnson-42@live.com"
+    )
+    print(resp)
+    ```
 
-See how searching against the Elasticsearch search-as-you-type field works by running:
+- __Search__ - see how searching against the Elasticsearch search-as-you-type field works by running the following queries.
 
-```python
-from main import *
+    1. Full email address ✅ works as expected
 
-resp = es_client.search(
-    index="account",
-    query={
-        "query": {
-            "multi_match": {
-            "query": "Mic.Johnson-42@live.com",
-            "type": "bool_prefix",
-            "fields": [
-                "search_as_you_type_field_email",
-                "search_as_you_type_field_email._2gram",
-                "search_as_you_type_field_email._3gram"
-            ]
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "query": {
+                    "multi_match": {
+                    "query": "Mic.Johnson_42@live.com",
+                    "type": "bool_prefix",
+                    "fields": [
+                        "search_as_you_type_field_email",
+                        "search_as_you_type_field_email._2gram",
+                        "search_as_you_type_field_email._3gram"
+                    ]
+                    }
+                }
             }
-        }
-    }
-)
-print(resp)
-```
+        )
+        print(resp)
+        ```
+
+    2.  Partial email address ✅ works as expected
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "query": {
+                    "multi_match": {
+                    "query": "Mic.John",
+                    "type": "bool_prefix",
+                    "fields": [
+                        "search_as_you_type_field_email",
+                        "search_as_you_type_field_email._2gram",
+                        "search_as_you_type_field_email._3gram"
+                    ]
+                    }
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    3.  Partial email address (with trailing period) ❌ does __not__ work as expected due to analyzer producing no matching tokens (the `.` is stripped from the search query)
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "query": {
+                    "multi_match": {
+                    "query": "Mic.",
+                    "type": "bool_prefix",
+                    "fields": [
+                        "search_as_you_type_field_email",
+                        "search_as_you_type_field_email._2gram",
+                        "search_as_you_type_field_email._3gram"
+                    ]
+                    }
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    4. Full email address with misspelling ✅ works as expected
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "query": {
+                    "multi_match": {
+                    "query": "Mic.Josnson_42@live.com",
+                    "type": "bool_prefix",
+                    "fields": [
+                        "search_as_you_type_field_email",
+                        "search_as_you_type_field_email._2gram",
+                        "search_as_you_type_field_email._3gram"
+                    ]
+                    }
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    5. Partial email address with misspelling ❌ does __not__ work as expected due to analyzer producing no matching tokens
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "query": {
+                    "multi_match": {
+                    "query": "Mic.Josnson_42",
+                    "type": "bool_prefix",
+                    "fields": [
+                        "search_as_you_type_field_email",
+                        "search_as_you_type_field_email._2gram",
+                        "search_as_you_type_field_email._3gram"
+                    ]
+                    }
+                }
+            }
+        )
+        print(resp)
+        ```
 
 #### Elasticsearch [Text Field](https://www.elastic.co/guide/en/elasticsearch/reference/current/text.html) with [Custom Analyzer](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-overview.html#analysis-customization)
 
-See how the Elasticsearch Text Field with a custom analyzer analyzes different emails by running:
+- __Analyze__ - see how the Elasticsearch Text Field with a custom analyzer analyzes different emails by running:
 
-```python
-from main import *
+    ```python
+    from main import *
 
-resp = es_client.indices.analyze(
-    index="account",
-    field="built_in_text_field_with_custom_analyzer_email",
-    text="Mic.Johnson-42@live.com"
-)
-print(resp)
-```
+    resp = es_client.indices.analyze(
+        index="account",
+        field="built_in_text_field_with_custom_analyzer_email",
+        text="Mic.Johnson-42@live.com"
+    )
+    print(resp)
+    ```
 
-See how searching against the Elasticsearch Text Field with a custom analyzer works by running:
+- __Search__ - see how searching against the Elasticsearch Text Field with a custom analyzer works by running the following queries.
 
-```python
-from main import *
+    1. Full email address ✅ works as expected
 
-resp = es_client.search(
-    index="account",
-    query={
-        "multi_match": {
-            "query": "Mic.Johnson-42@live.com",
-            "fields": [
-                "built_in_text_field_with_custom_analyzer_email",
-                "built_in_text_field_with_custom_analyzer_email.keyword"
-            ]
-        }
-    }
-)
-print(resp)
-```
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.Johnson-42@live.com",
+                    "fields": [
+                        "built_in_text_field_with_custom_analyzer_email",
+                        "built_in_text_field_with_custom_analyzer_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    2. Partial email address ✅ works as expected
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.John",
+                    "fields": [
+                        "built_in_text_field_with_custom_analyzer_email",
+                        "built_in_text_field_with_custom_analyzer_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    3. Partial email address (with trailing period) ✅ works as expected
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.",
+                    "fields": [
+                        "built_in_text_field_with_custom_analyzer_email",
+                        "built_in_text_field_with_custom_analyzer_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    4. Full email address with misspelling ✅ works as expected
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.Josnson_42@live.com",
+                    "fields": [
+                        "built_in_text_field_with_custom_analyzer_email",
+                        "built_in_text_field_with_custom_analyzer_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
+
+    5. Partial email address with misspelling ✅ works as expected
+
+        ```python
+        from main import *
+
+        resp = es_client.search(
+            index="account",
+            query={
+                "multi_match": {
+                    "query": "Mic.Josnson_42",
+                    "fields": [
+                        "built_in_text_field_with_custom_analyzer_email",
+                        "built_in_text_field_with_custom_analyzer_email.keyword"
+                    ]
+                }
+            }
+        )
+        print(resp)
+        ```
