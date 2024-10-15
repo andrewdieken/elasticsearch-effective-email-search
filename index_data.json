@@ -23,16 +23,16 @@
     {
         "first_name": "Michael",
         "last_name": "Johnson",
-        "built_in_text_field_email": "mic.johnson-42@live.com",
-        "built_in_text_field_with_custom_analyzer_email": "mic.johnson-42@live.com",
-        "search_as_you_type_field_email": "mic.johnson-42@live.com"
+        "built_in_text_field_email": "mic.johnson_42@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "mic.johnson_42@live.com",
+        "search_as_you_type_field_email": "mic.johnson_42@live.com"
     },
     {
         "first_name": "Michael",
         "last_name": "Johnson",
-        "built_in_text_field_email": "mic-johnson-42@live.com",
-        "built_in_text_field_with_custom_analyzer_email": "mic-johnson-42@live.com",
-        "search_as_you_type_field_email": "mic-johnson-42@live.com"
+        "built_in_text_field_email": "mic_johnson_42@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "mic_johnson_42@live.com",
+        "search_as_you_type_field_email": "mic_johnson_42@live.com"
     },
     {
         "first_name": "Michael",
@@ -44,9 +44,9 @@
     {
         "first_name": "Emily",
         "last_name": "Davis",
-        "built_in_text_field_email": "emily-davis@yahoo.com",
-        "built_in_text_field_with_custom_analyzer_email": "emily-davis@yahoo.com",
-        "search_as_you_type_field_email": "emily-davis@yahoo.com"
+        "built_in_text_field_email": "emily_davis@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "emily_davis@yahoo.com",
+        "search_as_you_type_field_email": "emily_davis@yahoo.com"
     },
     {
         "first_name": "Chris",
@@ -86,9 +86,9 @@
     {
         "first_name": "Laura",
         "last_name": "Garcia",
-        "built_in_text_field_email": "laura-g123@yahoo.com",
-        "built_in_text_field_with_custom_analyzer_email": "laura-g123@yahoo.com",
-        "search_as_you_type_field_email": "laura-g123@yahoo.com"
+        "built_in_text_field_email": "laura_g123@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "laura_g123@yahoo.com",
+        "search_as_you_type_field_email": "laura_g123@yahoo.com"
     },
     {
         "first_name": "Robert",
@@ -128,9 +128,9 @@
     {
         "first_name": "Chloe",
         "last_name": "Taylor",
-        "built_in_text_field_email": "chloe_taylor-12@outlook.com",
-        "built_in_text_field_with_custom_analyzer_email": "chloe_taylor-12@outlook.com",
-        "search_as_you_type_field_email": "chloe_taylor-12@outlook.com"
+        "built_in_text_field_email": "chloe_taylor_12@outlook.com",
+        "built_in_text_field_with_custom_analyzer_email": "chloe_taylor_12@outlook.com",
+        "search_as_you_type_field_email": "chloe_taylor_12@outlook.com"
     },
     {
         "first_name": "James",
@@ -163,9 +163,9 @@
     {
         "first_name": "Joshua",
         "last_name": "Green",
-        "built_in_text_field_email": "joshua-green@live.com",
-        "built_in_text_field_with_custom_analyzer_email": "joshua-green@live.com",
-        "search_as_you_type_field_email": "joshua-green@live.com"
+        "built_in_text_field_email": "joshua_green@live.com",
+        "built_in_text_field_with_custom_analyzer_email": "joshua_green@live.com",
+        "search_as_you_type_field_email": "joshua_green@live.com"
     },
     {
         "first_name": "Mia",
@@ -191,9 +191,9 @@
     {
         "first_name": "William",
         "last_name": "Hill",
-        "built_in_text_field_email": "william.hill-42@yahoo.com",
-        "built_in_text_field_with_custom_analyzer_email": "william.hill-42@yahoo.com",
-        "search_as_you_type_field_email": "william.hill-42@yahoo.com"
+        "built_in_text_field_email": "william.hill_42@yahoo.com",
+        "built_in_text_field_with_custom_analyzer_email": "william.hill_42@yahoo.com",
+        "search_as_you_type_field_email": "william.hill_42@yahoo.com"
     },
     {
         "first_name": "Grace",
