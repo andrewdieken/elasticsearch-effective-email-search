@@ -7,24 +7,14 @@
             "type": "text"
         },
         "built_in_text_field_email": {
-            "type": "text",
-            "fields": {
-                "keyword": {
-                    "type": "keyword"
-                }
-            }
+            "type": "text"
         },
         "search_as_you_type_field_email": {
             "type": "search_as_you_type"
         },
         "built_in_text_field_with_custom_analyzer_email": {
             "type": "text",
-            "analyzer": "email_analyzer",
-            "fields": {
-                "keyword": {
-                    "type": "keyword"
-                }
-            }
+            "analyzer": "email_analyzer"
         }
     }
 }
