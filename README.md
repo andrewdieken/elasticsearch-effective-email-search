@@ -73,12 +73,12 @@ To run these examples, use the provided Python snippets in your environment.
     resp = es_client.search(
         index="account",
         query={
-            "multi_match": {
-                "query": "Mic.Josnson_42@live.com",
-                "fields": [
-                    "built_in_text_field_email",
-                    "built_in_text_field_email.keyword"
-                ]
+            "query": {
+                "match": {
+                    "built_in_text_field_email": {
+                        "query": "Mic.Johnson_42@live.com"
+                    }
+                }
             }
         }
     )
@@ -177,12 +177,12 @@ To run these examples, use the provided Python snippets in your environment.
     resp = es_client.search(
         index="account",
         query={
-            "multi_match": {
-                "query": "Mic.Johnson-42@live.com",
-                "fields": [
-                    "built_in_text_field_with_custom_analyzer_email",
-                    "built_in_text_field_with_custom_analyzer_email.keyword"
-                ]
+            "query": {
+                "match": {
+                    "built_in_text_field_with_custom_analyzer_email": {
+                        "query": "Mic.Johnson-42@live.com"
+                    }
+                }
             }
         }
     )
